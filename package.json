@@ -1,0 +1,14 @@
+{
+  "name": "babel-study",
+  "version": "0.1.0",
+  "main": "js/main.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir js",
+    "run": "./node_modules/.bin/electron ."
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "electron": "^1.6.6"
+  }
+}
