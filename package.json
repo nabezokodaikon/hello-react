@@ -1,9 +1,9 @@
 {
   "name": "babel-study",
   "version": "0.1.0",
-  "main": "js/main.js",
+  "main": "app/js/main.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src --out-dir js",
+    "build": "./node_modules/.bin/babel src --out-dir app",
     "run": "./node_modules/.bin/electron ."
   },
   "devDependencies": {
