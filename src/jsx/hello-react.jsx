@@ -1,31 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function formatName(user) {
-  return user.firstName + " " + user.lastName;
+function WelcomeA(props) {
+  return <h1>WelcomeA, { props.hoge }</h1>
 }
 
-const user = {
-  firstName: "Tarou",
-  lastName: "Yamada"
-};
+class WelcomeB extends React.Component {
+  render() {
+    return <h1>WelcomeB, { this.props.fuga }</h1>
+  }
+}
 
-const element = (
-  <h1>
-    Hello, {formatName(user)}!
-  </h1>
-);
-
-function tick() {
-  const element = (
+function App() {
+  return (
     <div>
-      <h1>{ new Date().toLocaleTimeString() }</h1>
+      <WelcomeA hoge="Tarou" />,
+      <WelcomeB fuga="Yamada" />
     </div>
   );
-  ReactDOM.render(
-    element,
-    document.getElementById("root")
-  );
 }
 
-setInterval(tick, 1000);
+ReactDOM.render(
+  <App />,
+  document.getElementById("root")
+);
