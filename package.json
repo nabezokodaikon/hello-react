@@ -4,7 +4,7 @@
   "main": "app/js/main.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src --out-dir app",
-    "run": "./node_modules/.bin/electron ."
+    "run": "./node_modules/.bin/electron --js-flags='--harmony-tailcalls'  ."
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
