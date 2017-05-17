@@ -5,6 +5,7 @@ class Clock extends React.Component {
   constructor(props) {
     super(props);
     this.state = { counter: 0 };
+    hoge(1);
   }
 
   componentDidMount() {
