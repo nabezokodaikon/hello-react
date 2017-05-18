@@ -1,9 +1,9 @@
 {
   "name": "babel-study",
   "version": "0.1.0",
-  "main": "app/js/main.js",
+  "main": "build/js/main.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src --out-dir app",
+    "build": "./node_modules/.bin/babel src --out-dir build",
     "run": "./node_modules/.bin/electron --js-flags='--harmony-tailcalls' ."
   },
   "devDependencies": {
