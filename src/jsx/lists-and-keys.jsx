@@ -1,6 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+class ListItem extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return <li>{this.props.value}</li>;
+  }
+}
+
 class NumberList extends React.Component {
   constructor(props) {
     super(props);
@@ -9,9 +19,8 @@ class NumberList extends React.Component {
   render() {
     const numbers = this.props.numbers;
     const listItems = numbers.map(n =>
-      <li key={n.toString()}>
-        {n * 2}
-      </li>
+      <ListItem key={n.toString()}
+                value={n} />
     );
     return (
       <ul>
