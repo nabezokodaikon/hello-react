@@ -23,9 +23,17 @@ class NumberList extends React.Component {
                 value={n} />
     );
     return (
-      <ul>
-        {listItems}
-      </ul>
+      <div>
+        <ul>
+          {listItems}
+        </ul>
+        <ul>
+          {numbers.map(n =>
+            <ListItem key={n.toString()}
+                      value={n} />
+          )}
+        </ul>
+      </div>
     );
   }
 }
