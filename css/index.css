@@ -1,23 +1,28 @@
-body {
+* {
   padding: 5px;
 }
 
 .filterableProductTable {
+  border-style: solid;
   border-color: orange;
 }
 
 .searchBar {
+  border-style: solid;
   border-color: blue;
 }
 
 .productTable {
+  border-style: solid;
   border-color: green;
 }
 
 .productCategoryRow {
+  border-style: solid;
   border-color: turquoise;
 }
 
 .productRow {
+  border-style: solid;
   border-color: red;
 }
