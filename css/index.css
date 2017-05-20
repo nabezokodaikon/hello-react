@@ -1,0 +1,23 @@
+body {
+  padding: 5px;
+}
+
+#filterableProductTable {
+  border-color: orange;
+}
+
+#searchBar {
+  border-color: blue;
+}
+
+#productTable {
+  border-color: green;
+}
+
+#productCategoryRow {
+  border-color: turquoise;
+}
+
+#productRow {
+  border-color: red;
+}
