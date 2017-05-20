@@ -4,7 +4,8 @@
   "main": "build/js/main.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src --out-dir build",
-    "run": "./node_modules/.bin/electron --js-flags='--harmony-tailcalls' ."
+    "debug": "./node_modules/.bin/babel src --out-dir build && ./node_modules/.bin/electron --js-flags='--harmony-tailcalls' .",
+    "start": "./node_modules/.bin/electron --js-flags='--harmony-tailcalls' ."
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
