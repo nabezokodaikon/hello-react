@@ -2,22 +2,22 @@ body {
   padding: 5px;
 }
 
-#filterableProductTable {
+.filterableProductTable {
   border-color: orange;
 }
 
-#searchBar {
+.searchBar {
   border-color: blue;
 }
 
-#productTable {
+.productTable {
   border-color: green;
 }
 
-#productCategoryRow {
+.productCategoryRow {
   border-color: turquoise;
 }
 
-#productRow {
+.productRow {
   border-color: red;
 }
