@@ -18,7 +18,7 @@ console.log(__dirname);
 let win = null;
 
 function createWindow() {
-  win = new BrowserWindow({ width: 800, height: 600 });
+  win = new BrowserWindow({ width: 1024, height: 960 });
 
   installExtension(REACT_DEVELOPER_TOOLS)
     .then(name => console.log(`Added Extension: ${name}`))
